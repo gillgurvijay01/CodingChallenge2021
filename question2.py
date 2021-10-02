@@ -1,3 +1,7 @@
+# Question # GCC 2021 Coding
+# Submitted by GillGurvijay01
+
+
 def securitiesBuying(z, security_value):
     for i in range(0, len(security_value)):
         security_value[i] = int(security_value[i])
