@@ -7,10 +7,12 @@ def securitiesBuying(z, security_value):
     security_value.sort()
     security_value=list(security_value)
     security_value=security_value[::-1]
-    while(z-value>=min(security_value)):
+    while((z-value)>=min(security_value)):
         for i in security_value:
                 if i>z:
                    continue
+                elif i==0:
+                    break
                 else:
                     no_of_stocks=no_of_stocks+1
                     value+=i     
